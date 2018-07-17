@@ -1,4 +1,4 @@
-package com.stackroute.movieapp.controllers;
+package com.stackroute.movieapp.controllersTest;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +24,7 @@ public class MovieAppControllerTest {
         MockitoAnnotations.initMocks(this);
     }
     @Test
-    public void displayRestaurant() throws Exception{
+    public void displayMovies() throws Exception{
         movieMockMvc.perform(get("/movies"))
                 .andExpect(status().isOk());
     }
